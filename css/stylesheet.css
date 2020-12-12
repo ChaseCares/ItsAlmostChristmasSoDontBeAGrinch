@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Courier New', Courier, monospace;
     background-image: url('../img/background.jpg');
 }
 
@@ -93,7 +94,6 @@ path {
         width: 40%;
         position: fixed;
         bottom: 7%;
-
     }
     .present-2 {
         width: 35%;
