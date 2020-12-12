@@ -5,7 +5,7 @@
 }
 
 body {
-    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url('../img/background.jpg');
 }
 
@@ -26,26 +26,34 @@ path {
     text-align: center;
 }
 
+.hh-text {
+    animation:blinkingText 3s infinite;
+    font-size: 7em;
+    margin-top: 13%;
+}
+
 .bigGrinchText {
     animation:blinkingText 3s infinite;
     font-size: 3.35em;
-    color: red;
 }
 
 @keyframes blinkingText {
     0% {
-        fill: red;
-        text-shadow: 5px 5px green;
+        fill: #131313;
+        color: #131313;
+        text-shadow: 2px 5px green;
     }
 
     50% {
-        fill: green;
-        text-shadow: 5px 5px red;
+        fill: #dbdbdb;
+        color: #dbdbdb;
+        text-shadow: 2px 5px red;
     }
 
     100% {
-        fill: red;
-        text-shadow: 5px 5px green;
+        fill: #131313;
+        color: #131313;
+        text-shadow: 2px 5px green;
     }
 }
 
@@ -70,11 +78,23 @@ path {
     right: 2%;
 }
 
-.truck {
-    width: 5%;
+.truckL {
+    width: 8%;
     position: fixed;
     top: 1%;
     left: 1%;
+}
+
+.truckR {
+    width: 8%;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipH;
 }
 
 @media screen and (max-width: 1400px) {
@@ -84,11 +104,18 @@ path {
         left: 35%;
     }
 
-    .truck {
-        width: 15%;
-        position: fixed;
-        top: 1%;
+    .truckL {
+        width: 10%;
     }
+
+    .truckR {
+        width: 10%;
+    }
+
+    .hh-text {
+    margin-top: 30%;
+    font-size: 5em;
+}
 }
 
 @media screen and (max-width: 501px) {
@@ -99,20 +126,25 @@ path {
     }
     .present-1 {
         width: 40%;
-        position: fixed;
         bottom: 7%;
     }
 
     .present-2 {
         width: 35%;
-        position: fixed;
         bottom: 7%;
         right: 2%;
     }
 
-    .truck {
+    .truckL {
         width: 15%;
-        position: fixed;
-        top: 1%;
     }
+
+    .truckR {
+        width: 15%;
+    }
+
+    .hh-text {
+        margin-top: 80%;
+        font-size: 3em;
+}
 }
