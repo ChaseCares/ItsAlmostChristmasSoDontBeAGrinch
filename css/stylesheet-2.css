@@ -41,19 +41,19 @@ path {
     0% {
         fill: #131313;
         color: #131313;
-        text-shadow: 2px 5px green;
+        text-shadow: 5px 10px green;
     }
 
     50% {
         fill: #dbdbdb;
         color: #dbdbdb;
-        text-shadow: 2px 5px red;
+        text-shadow: 5px 10px red;
     }
 
     100% {
         fill: #131313;
         color: #131313;
-        text-shadow: 2px 5px green;
+        text-shadow: 5px 10px green;
     }
 }
 
