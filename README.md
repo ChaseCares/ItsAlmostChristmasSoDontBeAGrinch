@@ -1,2 +1,2 @@
 # ItsAlmostChristmasSoDontBeAGrinch
-Its almost Christmas so dont be a grinch website
+Its almost Christmas so don't be a grinch website

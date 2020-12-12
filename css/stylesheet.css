@@ -1,0 +1,65 @@
+
+body{
+    background-image: url('../img/background.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: 100% 100%; */
+}
+
+footer{
+    background-color: #666;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+path {
+    fill: transparent;
+}
+/* text {
+  fill: #FF9800;
+} */
+.container {
+    text-align: center;
+}
+
+.bigGrinch{
+    animation:blinkingText 5s infinite;
+    font-size: 3.35em;
+    color: red;
+}
+
+@keyframes blinkingText{
+    0%{
+        fill: red;
+        text-shadow: 5px 5px green;
+    }
+    50%{
+        fill: green;
+        text-shadow: 5px 5px red;
+    }
+    100%{
+        fill: red;
+        text-shadow: 5px 5px green;
+    }
+}
+
+.grinch{
+    width: 20%;
+    position: fixed;
+    bottom: 15%;
+    left: 40%;
+}
+.present-1{
+    width: 20%;
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+}
+.present-2{
+    width: 15%;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+}
