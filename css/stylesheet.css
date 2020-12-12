@@ -1,9 +1,10 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-image: url('../img/background.jpg');
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size: 100% 100%; */
 }
 
 footer{
@@ -12,6 +13,7 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 10px 0 10px 0;
 }
 
 path {
@@ -22,7 +24,7 @@ path {
     text-align: center;
 }
 
-.bigGrinch{
+.bigGrinchText{
     animation:blinkingText 5s infinite;
     font-size: 3.35em;
     color: red;
@@ -46,7 +48,7 @@ path {
 .grinch {
     width: 20%;
     position: fixed;
-    bottom: 15%;
+    top: 30%;
     left: 40%;
 }
 .present-1 {
@@ -66,4 +68,42 @@ path {
     position: fixed;
     top: 1%;
     left: 1%;
+}
+
+@media screen and (max-width: 1400px){
+    .grinch{
+        top: 25%;
+        width: 30%;
+        left: 35%;
+    }
+    .truck {
+        width: 15%;
+        position: fixed;
+        top: 1%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .grinch{
+        top: 15%;
+        width: 50%;
+        left: 25%;
+    }
+    .present-1 {
+        width: 40%;
+        position: fixed;
+        bottom: 7%;
+
+    }
+    .present-2 {
+        width: 35%;
+        position: fixed;
+        bottom: 7%;
+        right: 2%;
+    }
+    .truck {
+        width: 15%;
+        position: fixed;
+        top: 1%;
+    }
 }
