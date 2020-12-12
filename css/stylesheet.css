@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Courier New', Courier, monospace;
     background-image: url('../img/background.jpg');
 }
 
-footer{
+footer {
     background-color: #666;
     text-align: center;
     position: fixed;
@@ -25,22 +26,24 @@ path {
     text-align: center;
 }
 
-.bigGrinchText{
-    animation:blinkingText 5s infinite;
+.bigGrinchText {
+    animation:blinkingText 3s infinite;
     font-size: 3.35em;
     color: red;
 }
 
-@keyframes blinkingText{
-    0%{
+@keyframes blinkingText {
+    0% {
         fill: red;
         text-shadow: 5px 5px green;
     }
-    50%{
+
+    50% {
         fill: green;
         text-shadow: 5px 5px red;
     }
-    100%{
+
+    100% {
         fill: red;
         text-shadow: 5px 5px green;
     }
@@ -52,18 +55,21 @@ path {
     top: 30%;
     left: 40%;
 }
+
 .present-1 {
     width: 20%;
     position: fixed;
     bottom: 5%;
     left: 2%;
 }
+
 .present-2 {
     width: 15%;
     position: fixed;
     bottom: 5%;
     right: 2%;
 }
+
 .truck {
     width: 5%;
     position: fixed;
@@ -71,12 +77,13 @@ path {
     left: 1%;
 }
 
-@media screen and (max-width: 1400px){
-    .grinch{
+@media screen and (max-width: 1400px) {
+    .grinch {
         top: 25%;
         width: 30%;
         left: 35%;
     }
+
     .truck {
         width: 15%;
         position: fixed;
@@ -84,8 +91,8 @@ path {
     }
 }
 
-@media screen and (max-width: 500px){
-    .grinch{
+@media screen and (max-width: 500px) {
+    .grinch {
         top: 15%;
         width: 50%;
         left: 25%;
@@ -95,12 +102,14 @@ path {
         position: fixed;
         bottom: 7%;
     }
+
     .present-2 {
         width: 35%;
         position: fixed;
         bottom: 7%;
         right: 2%;
     }
+
     .truck {
         width: 15%;
         position: fixed;
