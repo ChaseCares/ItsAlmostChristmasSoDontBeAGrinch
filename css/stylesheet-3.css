@@ -7,19 +7,26 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('../img/background.min.svg');
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
 }
 
 footer {
-    background-color: #666;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 5px 0 5px 0;
+    padding: 2px 0 2px 0;
+    font-size: x-small;
 }
 
 path {
     fill: transparent;
+}
+svg {
+    max-width: 100vw;
 }
 
 .container {
@@ -27,66 +34,90 @@ path {
 }
 
 .hh-text {
-    animation:blinkingText 3s infinite;
-    font-size: 7em;
-    margin-top: 13%;
+    animation:blinkingText 10s infinite;
+    position: fixed;
+    bottom: 1vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
 }
 
 .bigGrinchText {
-    animation:blinkingText 3s infinite;
+    animation:blinkingText 10s infinite;
     font-size: 3.35em;
+    text-shadow: 5px 5px green;
 }
 
 @keyframes blinkingText {
     0% {
         fill: #131313;
         color: #131313;
-        text-shadow: 5px 10px green;
+        text-shadow: 5px 5px green;
     }
 
     50% {
         fill: #dbdbdb;
         color: #dbdbdb;
-        text-shadow: 5px 10px red;
+        text-shadow: 5px 5px red;
     }
 
     100% {
         fill: #131313;
         color: #131313;
-        text-shadow: 5px 10px green;
+        text-shadow: 5px 5px green;
     }
 }
 
 .grinch {
-    width: 20%;
     position: fixed;
-    top: 30%;
-    left: 40%;
+    width: 55vw;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px){
+    .hh-text {
+        bottom: 18vh;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-aspect-ratio: 1/1){
+    .grinch{
+        width: 45vh;
+    }
 }
 
 .present-1 {
-    width: 20%;
     position: fixed;
-    bottom: 5%;
-    left: 2%;
+    bottom: 5vh;
+    left: 2vw;
+    max-width: 20%;
+    min-width: 180px;
 }
 
 .present-2 {
-    width: 15%;
+    width: 15vw;
     position: fixed;
-    bottom: 5%;
-    right: 2%;
+    bottom: 5vh;
+    right: 2vw;
+    max-width: 30%;
+    min-width: 100px;
 }
 
 .truckL {
-    width: 8%;
+    width: 12vw;
+    min-width: 90px;
     position: fixed;
-    top: 1%;
-    left: 1%;
+    top: 1vh;
+    left: 1vw;
 }
 
 .truckR {
-    width: 8%;
+    width: 12vw;
+    min-width: 90px;
     position: fixed;
     top: 1%;
     right: 1%;
@@ -95,58 +126,6 @@ path {
     -o-transform: scale(-1, 1);
     transform: scale(-1, 1);
     filter: FlipH;
-}
-
-@media screen and (max-width: 1400px) {
-    .grinch {
-        top: 25%;
-        width: 30%;
-        left: 35%;
-    }
-
-    .truckL {
-        width: 10%;
-    }
-
-    .truckR {
-        width: 10%;
-    }
-
-    .hh-text {
-    margin-top: 30%;
-    font-size: 5em;
-}
-}
-
-@media screen and (max-width: 501px) {
-    .grinch {
-        top: 15%;
-        width: 50%;
-        left: 25%;
-    }
-    .present-1 {
-        width: 40%;
-        bottom: 7%;
-    }
-
-    .present-2 {
-        width: 35%;
-        bottom: 7%;
-        right: 2%;
-    }
-
-    .truckL {
-        width: 15%;
-    }
-
-    .truckR {
-        width: 15%;
-    }
-
-    .hh-text {
-        margin-top: 80%;
-        font-size: 3em;
-    }
 }
 
 .editor-stage .snow {
